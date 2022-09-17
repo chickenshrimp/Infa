@@ -1,0 +1,549 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: block;
+}
+
+.content { /*black thing */
+    display: flex;
+    background: #171a21;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(23, 26, 33);
+}
+
+.menuitem { /*buttons on top ig*/
+    display: flex;
+    flex: auto;
+    margin: 0px auto;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    line-height: 16px;
+    float: left;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+}
+
+.content{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+div .logoSteam{
+    margin: 30px;
+    padding-bottom: 0%;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+div .menuitem{
+    padding-left: 7px;
+    padding-top: 46px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+}
+
+div .action-menu{
+    padding-top: 6px;
+    padding-left: 130px;
+    padding-bottom: 0px;
+}
+
+div .global_action_link{
+    color: #b8b6b4;
+}
+
+.login-container{
+    padding-top: 80px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div .newloginDialogFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    margin: 10px 16px;
+}
+
+.newloginDialogFlex .newloginDialog-PrimaryHeader {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    font-weight: 200;
+    text-align: left;
+    padding-right: 550px;
+    padding-bottom: 30px;
+}
+
+div .newloginDialog .newloginDialog-SideBySide{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+div .newloginDialog-LoginForm .newloginDialog{
+    flex: 1;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+
+div .newloginDialog-TextField .newloginDialog{
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    gap: 2px;
+}
+
+.newloginDialog .newloginDialog-FieldLabel{
+    color: #1999ff;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    text-align: left;
+ 
+}
+
+.newloginDialog .newloginDialog-FieldLabelSec{
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    font-weight: 500;
+    color: #afafaf;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    text-align: left;
+
+}
+
+.newloginDialog .newcheckboxLogin{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newloginDialog .newLoginDialogCheckbox{
+    width: 14px;
+    height: 14px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: #32353c;
+    cursor: pointer;
+    outline: 1px;
+}
+
+.newloginDialog .newLoginDialogCheckbox .newLoginCheck{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.newloginDialog .newcheckboxLogin .newloginDialog_CheckboxFieldLabel{
+    color: #afafaf;
+    font-size: 12px;
+    user-select: none;
+    padding-left: 6px;
+}
+
+.SVGIcon_Button {
+    fill: #fff;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 320px;
+}
+
+input[type="text" i] {
+    padding: 2px 2px;
+}
+
+.newloginDialog .newloginDialog-TextInput {
+	border-radius: 2px;
+    padding: 10px;
+    border:  1px;
+    color: #fff;
+    padding: 10px;
+    background-color: #32353c;
+    outline: none;
+    height: 17px;
+    width: 412px;
+    grid-area: input;
+    border: 1px solid #32353c;
+}
+
+.newloginDialog .SignInContent{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding:  12px;
+    padding-left: 70px;
+}
+
+.newloginDialog .SignInContent button{
+    width: 270px;
+}
+
+.newloginDialog .SubmitButton{
+    position: relative;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: .03em;
+    cursor: pointer;
+    padding-top: 12px;
+}
+
+.newloginDialog .Error{
+    color: #c15755;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+.newloginDialog .newlogindialog_TextAlignCenter{
+    color: #afafaf;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 90px;
+}
+
+.newloginDialog .newloginDialog-SideBySide{ 
+    background-color: #181a21;
+    border-radius: 4px;
+    padding: 24px 32px;
+    flex: 1;
+    min-width: 636px;
+}
+
+.newloginDialog .newloginDialog-QRSection{
+    flex: 0;
+    display: grid;
+    gap: 4px;
+    margin-left: 24px;
+}
+
+.newloginDialog .newloginDialog-QRSection .QRBetaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+.newloginDialog .newloginDialog-QRSection .newlogindialog_BetaTag{
+    color: #1999ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+.newloginDialog .newloginDialog-QRSection .BetaSubtitleWithQR{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.newloginDialog .PhoneIcon{
+    padding-right: 8px;
+    width: 120px;
+    fill: #afafaf;
+}
+
+.newloginDialog .BetaSubtitle .newloginDialog-QRSection{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #afafaf;
+    margin: 8px;
+    padding-left: 50px;
+}
+
+.newloginDialog .newloginDialog-QRSection .JoinBetaButton{
+    background-color: rgba(255,255,255,.1);
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.newloginDialog .newloginDialog-QRSection .newlogindialog_ShowQRLink{
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #afafaf;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+/*Bottom begins*/
+.login-bottom{
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-bottom{
+    display: flex;
+    background: #181A21;
+    background-color: #181A21;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+
+.login-bottom-row-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #b8b6b4;
+}
+
+.login .login_join_desc {
+    max-width: 60%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.footer_spacer{
+    padding-top: 20px;
+    background-color: #181A21;
+}
+
+.footer .rule{
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+.footer{
+    display: flex;
+    background: #181A21;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.footer .footer-logo-steam{
+    float: right;
+    padding-top: 2px;
+}
+
+.footer .footer-logo{
+    float: left;
+    padding-top: 2px;
+}
+
+.footer .footer-content{
+    width: 940px;
+    margin: 0px auto;
+    padding-top: 16px;
+}
+
+.footer-text{
+    float: left;
+    margin-left: 12px;
+    color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer .responsive_optin_link{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btnv6_grey_black{
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #66c0f4 !important;
+    background: #212c3d;
+    line-height: 150%
+}
+
+.footer .valve_links {
+    margin-top: 8px;
+    margin-bottom: 50px;
+    float: left;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #61686D;
+}
+
+
+
+.responsive_optin_link .btn_medium > span {
+    line-height: 150%;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+body.login {
+    color: #E9E9E9;
+    background-color: #181A21;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+body {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6d4df;
+    font-size: 12px;
+}
+body, body.shared_common_v6_3r3Le {
+    color: #969696;
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+}
+
+:root {
+    --gpSystemLightestGrey: #DCDEDF;
+    --gpSystemLighterGrey: #B8BCBF;
+    --gpSystemLightGrey: #8B929A;
+    --gpSystemGrey: #67707B;
+    --gpSystemDarkGrey: #3D4450;
+    --gpSystemDarkerGrey: #23262E;
+    --gpSystemDarkestGrey: #0E141B;
+    --gpStoreLightestGrey: #CCD8E3;
+    --gpStoreLighterGrey: #A7BACC;
+    --gpStoreLightGrey: #7C8EA3;
+    --gpStoreGrey: #4e697d;
+    --gpStoreDarkGrey: #2A475E;
+    --gpStoreDarkerGrey: #1B2838;
+    --gpStoreDarkestGrey: #000F18;
+    --gpGradient-StoreBackground: linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
+    --gpGradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%);
+    --gpColor-Blue: #1A9FFF;
+    --gpColor-BlueHi: #00BBFF;
+    --gpColor-Green: #5ba32b;
+    --gpColor-GreenHi: #59BF40;
+    --gpColor-Orange: #E35E1C;
+    --gpColor-Red: #D94126;
+    --gpColor-RedHi: #EE563B;
+    --gpColor-DustyBlue: #417a9b;
+    --gpColor-LightBlue: #B3DFFF;
+    --gpColor-Yellow: #FFC82C;
+    --gpColor-ChalkyBlue: #66C0F4;
+    --gpBackground-LightSofter: #6998bb24;
+    --gpBackground-LightSoft: #3b5a7280;
+    --gpBackground-LightMedium: #678BA670;
+    --gpBackground-LightHard: #93B8D480;
+    --gpBackground-LightHarder: #aacce6a6;
+    --gpBackground-DarkSofter: #0e141b33;
+    --gpBackground-DarkSoft: #0e141b66;
+    --gpBackground-DarkMedium: #0e141b99;
+    --gpBackground-DarkHard: #0e141bcc;
+    --gpBackground-Neutral-LightSofter: rgba(235, 246, 255, 0.10);
+    --gpBackground-Neutral-LightSoft: rgba(235, 246, 255, 0.20);
+    --gpBackground-Neutral-LightMedium: rgba(235, 246, 255, 0.30);
+    --gpBackground-Neutral-LightHard: rgba(235, 246, 255, 0.40);
+    --gpBackground-Neutral-LightHarder: rgba(235, 246, 255, 0.50);
+    --gpCorner-Small: 1px;
+    --gpCorner-Medium: 2px;
+    --gpCorner-Large: 3px;
+    --gpSpace-Gutter: 24px;
+    --gpSpace-Gap: 12px;
+    --gpNavWidth: 240px;
+    --gpPaymentsNavWidth: 340px;
+    --gpDselectWidth: 340px;
+    --gpSidePanelWidth: 340px;
+
+}
+
+::-webkit-scrollbar-corner {
+    background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #434953;
+    border-radius: 10px;
+    z-index: 12;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: padding-box;
+    transition: background-color .32s ease-in-out;
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+::selection {
+    background: #54a5d4;
+    text-shadow: 1px 1px 2px #000000aa;
+    color: #fff;
+}
+
