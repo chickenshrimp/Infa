@@ -20,6 +20,7 @@ namespace HttpsSteam
                 {
                     Handler(Console.ReadLine()?.ToLower(), server);
                 }
+                server.Stop();
             }
         }
 
