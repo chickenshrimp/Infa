@@ -9,13 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpsSteam", "..\HttpsSteam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlWork", "..\ControlWork\ControlWork.csproj", "{1D50A49E-4D66-48C5-9DC8-92EE283E879D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19.11.22cw", "19.11.22cw", "{334F475F-28A9-4D30-9A57-D234365B35DC}"
-	ProjectSection(SolutionItems) = preProject
-		..\ControlWork\index.html = ..\ControlWork\index.html
-		..\ControlWork\Program.cs = ..\ControlWork\Program.cs
-		..\ControlWork\responseIndex.html = ..\ControlWork\responseIndex.html
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
