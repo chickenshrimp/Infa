@@ -113,6 +113,34 @@ namespace ControlWork
             });
         }
 
+        private string CodeEncode(string text)
+        {
+            const string alfabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+            var fullAlfabet = alfabet + alfabet.ToLower();
+            var letterQty = fullAlfabet.Length;
+            var retVal = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                var c = text[i];
+                var index = fullAlfabet.IndexOf(c);
+                if (index < 0)
+                {
+                    retVal += c.ToString();
+                }
+                else
+                {
+                    var codeIndex = (letterQty + index + 3) % letterQty;
+                    retVal += fullAlfabet[codeIndex];
+                }
+            }
+
+            return retVal;
+        }
+
+      
+        public string Encrypt(string plainMessage)
+            => CodeEncode(plainMessage);
+
         public void Stop()
         {
             _listener.Stop();
@@ -189,6 +217,12 @@ namespace ControlWork
 
             str = str.Replace("@#!elephant=&.ha-ha", "resultMyVoid");
             File.WriteAllText(fileOutput, str);
+
+            foreach (KeyValuePair<string, string> replacement in dict)
+            {
+                str = File.ReadAllText(fileOutput).Replace(replacement.Key, Encrypt(replacement.Key));
+                File.WriteAllText(fileOutput, str);
+            }
 
             foreach (KeyValuePair<string, string> replacement in dict)
             {
